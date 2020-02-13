@@ -1,0 +1,210 @@
+{
+  "Description": {
+    "Id": "starsystemdef_Jamestown",
+    "Name": "Jamestown",
+    "Details": "Jamestown has three landmasses: Helen, Atwell, and Chichon. The capital city (Founding) is located on Helen. Moon's name: York. Before the end of the Star League, Jamestown was considered important enough to maintain a SLDF garrison on world.",
+    "Icon": ""
+  },
+  "Position": {
+    "x": 194.879,
+    "y": -387.717,
+    "z": 0
+  },
+  "Tags": {
+    "items": [
+      "planet_name_jamestown",
+      "planet_size_medium",
+      "planet_climate_tropical",
+      "planet_other_megaforest",
+      "planet_other_floatingworld",
+      "planet_other_storms",
+      "planet_feature_rings",
+      "planet_feature_moon01",
+      "planet_other_moon",
+      "planet_pop_medium",
+      "planet_other_capital",
+      "planet_industry_recreation",
+      "planet_industry_aquaculture",
+      "planet_industry_manufacturing",
+      "planet_other_comstar",
+      "planet_other_starleague",
+      "planet_other_alienvegetation",
+      "planet_other_newcolony",
+      "planet_other_pirate",
+      "planet_ruins",
+      "TaurianConcordat"
+    ],
+    "tagSetSourceFile": ""
+  },
+  "SupportedBiomes": [
+    "jungleTropical"
+  ],
+  "MapRequiredTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+  },
+  "MapExcludedTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+  },
+  "FuelingStation": false,
+  "JumpDistance": 10,
+  "ownerID": "TaurianConcordat",
+  "ShopRefreshRate": 0,
+  "ShopMaxInventory": 0,
+  "ShopMaxSpecials": 9,
+  "SystemInfluence": [
+    {
+      "factionID": "NoFaction",
+      "Influence": 0
+    },
+    {
+      "factionID": "Davion",
+      "Influence": 0
+    },
+    {
+      "factionID": "Liao",
+      "Influence": 0
+    },
+    {
+      "factionID": "Kurita",
+      "Influence": 0
+    },
+    {
+      "factionID": "Marik",
+      "Influence": 0
+    },
+    {
+      "factionID": "Steiner",
+      "Influence": 0
+    },
+    {
+      "factionID": "TaurianConcordat",
+      "Influence": 0
+    },
+    {
+      "factionID": "MagistracyOfCanopus",
+      "Influence": 0
+    },
+    {
+      "factionID": "AuriganDirectorate",
+      "Influence": 0
+    },
+    {
+      "factionID": "AuriganRestoration",
+      "Influence": 0
+    },
+    {
+      "factionID": "ComStar",
+      "Influence": 0
+    },
+    {
+      "factionID": "MercenaryReviewBoard",
+      "Influence": 0
+    },
+    {
+      "factionID": "AuriganPirates",
+      "Influence": 0
+    },
+    {
+      "factionID": "AuriganMercenaries",
+      "Influence": 0
+    }
+  ],
+  "TravelRequirements": [
+    {
+      "Scope": "Company",
+      "RequirementTags": {
+        "items": [
+          "map_travel_2a"
+        ],
+        "tagSetSourceFile": ""
+      },
+      "ExclusionTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+      },
+      "RequirementComparisons": []
+    }
+  ],
+  "StarPosition": null,
+  "StarType": "G",
+  "Depletable": false,
+  "UseSystemRoninHiringChance": false,
+  "RoninHiringChance": 0,
+  "UseMaxContractOverride": false,
+  "MaxContractOverride": 0,
+  "SystemShopItems": [
+    "itemCollection_major_TaurianConcordat",
+    "itemCollection_shop_chemicalsProgression",
+    "itemCollection_shop_miningProgression"
+  ],
+  "factionShopOwnerID": "TaurianConcordat",
+  "FactionShopItems": [
+    "itemCollection_faction_TaurianConcordat"
+  ],
+  "BlackMarketShopItems": null,
+  "CoreSystemID": "starsystemdef_Jamestown",
+  "StartingSystemModes": [
+    "KAMEA_CAMPAIGN",
+    "CAREER",
+    "NONE"
+  ],
+  "DefaultDifficulty": 6,
+  "DifficultyList": [],
+  "DifficultyModes": [],
+  "contractEmployerIDs": [
+    "TaurianConcordat",
+    "Locals"
+  ],
+  "contractTargetIDs": [
+    "Steiner",
+    "Marik",
+    "Kurita",
+    "Davion",
+    "Liao",
+    "AuriganRestoration",
+    "ComStar",
+    "MagistracyOfCanopus",
+    "Outworld",
+    "Marian",
+    "Oberon",
+    "Lothian",
+    "Circinus",
+    "Illyrian",
+    "Rasalhague",
+    "Ives",
+    "Axumite",
+    "Castile",
+    "Chainelane",
+    "ClanBurrock",
+    "ClanCloudCobra",
+    "ClanCoyote",
+    "ClanDiamondShark",
+    "ClanFireMandrill",
+    "ClanGhostBear",
+    "ClanGoliathScorpion",
+    "ClanHellsHorses",
+    "ClanIceHellion",
+    "ClanJadeFalcon",
+    "ClanNovaCat",
+    "ClansGeneric",
+    "ClanSmokeJaguar",
+    "ClanSnowRaven",
+    "ClanStarAdder",
+    "ClanSteelViper",
+    "ClanWolf",
+    "Delphi",
+    "Elysia",
+    "Hanse",
+    "JarnFolk",
+    "Tortuga",
+    "Valkyrate",
+    "NoFaction",
+    "Locals",
+    "AuriganDirectorate",
+    "AuriganPirates",
+    "WordOfBlake",
+    "Rim"
+  ]
+}
