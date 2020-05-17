@@ -21,8 +21,9 @@ namespace InnerSphereMap {
         public string splashText = "";
 
         public List<LogoItem> logos = new List<LogoItem>();
-        public bool reducedClanLogos = true;    
-
+        public bool reducedClanLogos = true;
+        public bool drawBorders = false;
+        public bool rescaleBorders = false;
     }
 
     public class LogoItem
