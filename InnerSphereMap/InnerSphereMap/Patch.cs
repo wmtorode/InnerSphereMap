@@ -71,17 +71,25 @@ namespace InnerSphereMap {
                         restPanel.SetActive(false);
                     } 
                     GameObject superParent = GameObject.Find("uixPrfPanl_captainsQuarters_Reputation-Panel_V2(Clone)");
+                    ScrollRect scroller;
                     if (superParent != null) {
                         GameObject bgfill = superParent.transform.FindRecursive("bgFill").gameObject;
                         if(bgfill != null) {
                             bgfill.SetActive(false);
-                        } 
+                        }
+                        scroller = superParent.AddComponent<ScrollRect>();
+                        scroller.content = superParent.GetComponent<RectTransform>();
+                        scroller.verticalScrollbarVisibility = ScrollRect.ScrollbarVisibility.Permanent;
+                        scroller.vertical = true;
+                        scroller.horizontal = false;
+                        scroller.scrollSensitivity = 25;
                     }
                     GameObject MRBRep = GameObject.Find("uixPrfPanl_AA_MercBoardReputationPanel");
                     if (MRBRep != null) {
                         MRBRep.transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
                         MRBRep.transform.localPosition = new Vector3(0, 390, MRBRep.transform.localPosition.z);
                     }
+                    
                     GridLayoutGroup grid = parent.GetComponent<GridLayoutGroup>();
                     if (grid != null) {
                         grid.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
