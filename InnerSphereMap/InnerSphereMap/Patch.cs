@@ -72,17 +72,27 @@ namespace InnerSphereMap {
                     } 
                     GameObject superParent = GameObject.Find("uixPrfPanl_captainsQuarters_Reputation-Panel_V2(Clone)");
                     ScrollRect scroller;
+                    Scrollbar scrollbar;
                     if (superParent != null) {
                         GameObject bgfill = superParent.transform.FindRecursive("bgFill").gameObject;
                         if(bgfill != null) {
                             bgfill.SetActive(false);
                         }
                         scroller = superParent.AddComponent<ScrollRect>();
-                        scroller.content = superParent.GetComponent<RectTransform>();
+                        scrollbar = scroller.transform.gameObject.AddComponent<Scrollbar>();
+                        scroller.verticalScrollbar = scrollbar;
+                        scrollbar.size = 1;
+                        scrollbar.SetDirection(Scrollbar.Direction.BottomToTop, false);
+                        scroller.viewport = parent.GetComponent<RectTransform>();
+                        //scroller.content = parent.GetComponent<RectTransform>();
                         scroller.verticalScrollbarVisibility = ScrollRect.ScrollbarVisibility.Permanent;
                         scroller.vertical = true;
                         scroller.horizontal = false;
                         scroller.scrollSensitivity = 25;
+                    }
+                    else
+                    {
+                        scroller = null;
                     }
                     GameObject MRBRep = GameObject.Find("uixPrfPanl_AA_MercBoardReputationPanel");
                     if (MRBRep != null) {
@@ -97,6 +107,7 @@ namespace InnerSphereMap {
                         grid.spacing = new Vector2(0, 0);
                         grid.cellSize = new Vector2(275, grid.cellSize.y);
                         grid.childAlignment = TextAnchor.UpperLeft;
+                        scroller.content = grid.GetComponent<RectTransform>();
                     }
                     GameObject primeWidget = ___FactionPanelWidgets[0].gameObject;
                     if (___FactionPanelWidgets.Count < ___simState.displayedFactions.Count + 1) {
