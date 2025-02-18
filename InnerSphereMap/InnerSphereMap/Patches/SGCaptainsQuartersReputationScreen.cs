@@ -144,8 +144,8 @@ public static class SGCaptainsQuartersReputationScreen_RefreshWidgets
     {
         try
         {
-            FactionDef factionDef = FactionEnumeration.GetAuriganRestorationFactionValue().FactionDef;
-            if (factionDef != null)
+            FactionValue factionValue = FactionEnumeration.GetAuriganRestorationFactionValue();
+            if (factionValue.FactionDef != null && __instance.simState.displayedFactions.Contains(factionValue.Name))
             {
                 __instance.FactionPanelWidgets[__instance.FactionPanelWidgets.Count - 1].gameObject.SetActive(true);
                 __instance.FactionPanelWidgets[__instance.FactionPanelWidgets.Count - 1].Init(__instance.simState,
